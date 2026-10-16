@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Lost in the Shadows | Vampire Haven</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            min-height: 100vh;
+            min-height: 100svh;
+            display: grid;
+            place-items: center;
+            padding: 32px 20px;
+            background:
+                radial-gradient(
+                    ellipse at center,
+                    #350909 0%,
+                    #150606 45%,
+                    #080808 80%
+                );
+            color: #e8d6d2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        main{
+            width: 100%;
+            max-width: 620px;
+            padding: clamp(28px, 6vw, 56px);
+            background: rgba(8, 8, 8, 0.65);
+            border: 1px solid rgba(195, 42, 42, 0.35);
+            border-radius: 24px;
+            box-shadow: 0 20px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .brand{
+            margin-bottom: 24px;
+            color: #b9a6a6;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .error-code{
+            color: #c32a2a;
+            font-family: Georgia, serif;
+            font-size: clamp(96px, 25vw, 170px);
+            font-weight: bold;
+            line-height: 1;
+            text-shadow:
+                0 4px 0 #560505,
+                0 0 35px rgba(195, 42, 42, 0.4);
+        }
+
+        h1{
+            margin: 24px 0 16px;
+            font-family: Georgia, serif;
+            font-size: clamp(26px, 6vw, 38px);
+        }
+
+        .description{
+            max-width: 420px;
+            margin: 0 auto 30px;
+            color: #b9a6a6;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .home-button{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 12px 26px;
+            background: linear-gradient(180deg, #a41e14, #700404);
+            border: 1px solid #c32a2a;
+            border-radius: 999px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+
+        .home-button:hover{
+            background: #8a0303;
+            box-shadow: 0 0 24px rgba(195, 42, 42, 0.4);
+        }
+
+        .home-button:focus-visible{
+            outline: 3px solid #e8d6d2;
+            outline-offset: 5px;
+        }
+
+        @media (max-width: 480px){
+            .brand{
+                letter-spacing: 2px;
+            }
+
+            .home-button{
+                width: 100%;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce){
+            .home-button{
+                transition: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="brand">Vampire Haven</p>
+
+        <div class="error-code" aria-hidden="true">404</div>
+
+        <h1>Lost in the shadows?</h1>
+
+        <p class="description">
+            The page you seek has vanished into the night.
+            Return to the Haven—your next dark craving awaits.
+        </p>
+
+        <!-- Replace vampire-haven with your exact repository name. -->
+        <a href="/vampire-haven-cafe2/" class="home-button">
+            Return to the Haven
+        </a>
+    </main>
+</body>
+</html>
